@@ -1,0 +1,11 @@
+Date: 9 March 2026
+
+Progress:
+- Created GitHub repository for Team 5
+- Initialized project
+
+Questions:
+- Clarification needed on authentication API structure
+
+Issues:
+- None currently
