@@ -1,0 +1,299 @@
+/* src/styles.css */
+
+/* Luxury Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* Reset default margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #f5f5f5;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Headings Luxury Font */
+h1, h2, h3, nav h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(6px);
+  color: #d4af37;
+}
+
+nav h2 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #d4af37;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0f0f0f;
+  color: #d4af37;
+  margin-top: 2rem;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+}
+
+section h1, section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  color: #d4af37;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons button {
+  padding: 0.8rem 2rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-buttons .btn-secondary {
+  background-color: #d4af37;
+  color: black;
+}
+
+.hero-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Featured Plots */
+.featured-plots {
+  padding: 3rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.plots-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Plot Card */
+.plot-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem;
+  max-width: 250px;
+  text-align: center;
+  border: 1px solid #f0e2b6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.plot-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plot-card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  color: #d4af37;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.plot-card button:hover {
+  background-color: #1f1f1f;
+  transform: translateY(-2px);
+}
+
+/* Forms (Signup & Login) */
+form, .form-container {
+  max-width: 450px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #f0e2b6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  color: #d4af37;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1f1f1f;
+  transform: translateY(-2px);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-container p a {
+  text-decoration: none;
+  color: #d4af37;
+}
+
+.form-container p a:hover {
+  text-decoration: underline;
+}
+
+/* Role Selection Cards (Signup) */
+.role-selection {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.role-card {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.role-card:hover {
+  border-color: #1e90ff;
+}
+
+.role-card.active {
+  background-color: #1e90ff;
+  color: white;
+  border-color: #1e90ff;
+}
+
+/* How It Works */
+.how-it-works .steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.how-it-works .step {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 250px;
+  border: 1px solid #f0e2b6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Benefits */
+.benefits-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.benefit-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 250px;
+  border: 1px solid #f0e2b6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #0f0f0f;
+  color: #d4af37;
+}
+
+.cta button {
+  background: #d4af37;
+  color: black;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background: #b8962e;
+  transform: translateY(-2px);
+}
